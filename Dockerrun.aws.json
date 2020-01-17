@@ -1,0 +1,15 @@
+{
+    "AWSEBDockerrunVersion": "2",
+    "containerDefinitions": [
+      {
+        "name": "spring-mvc",
+        "image": "954875065177.dkr.ecr.us-west-2.amazonaws.com/paranshu:latest",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [{
+            "hostPort": 80,
+            "containerPort": 8080
+          }]
+      }
+    ]
+  }
