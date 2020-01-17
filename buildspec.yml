@@ -3,17 +3,16 @@ phases:
   install:
     runtime-versions:
       java: corretto8
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
+  # pre_build:
+  #   commands:
+  #     - echo Nothing to do in the pre_build phase...
   build:
     commands: 
-      - echo "Entering the build stage"
-      - cd mvc-project-1
-      - mvn clean install
-  post_build:
-    commands:
-      - echo "Entering the post-build stage"
+  #    - echo "Entering the build stage"
+      - mvc-project-1/./mvnw clean install
+  # post_build:
+  #   commands:
+  #     - echo "Entering the post-build stage"
 artifacts:
   files:
     - '**/*'

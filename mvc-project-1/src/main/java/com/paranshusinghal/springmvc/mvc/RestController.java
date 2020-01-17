@@ -26,7 +26,7 @@ public class RestController {
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.OK)
 	public String status() {
-		return "The spring application is up and running";
+		return "OMG The spring application is up and running";
 	}
 	
 	@GetMapping(path = "/")
