@@ -1,13 +1,16 @@
 version: 0.2
 phases:
-    build:
-      commands: 
-        - echo "Entering the build stage"
-        - cd mvc-project-1
-        - mvn clean install
-    post_build:
-      commands:
-        - echo "Entering the post-build stage"
+  install:
+    runtime-versions:
+      - corretto8
+  build:
+    commands: 
+      - echo "Entering the build stage"
+      - cd mvc-project-1
+      - mvn clean install
+  post_build:
+    commands:
+      - echo "Entering the post-build stage"
 artifacts:
   files:
     - mvc-project-1/target/mvc-0.0.1-SNAPSHOT.jar
