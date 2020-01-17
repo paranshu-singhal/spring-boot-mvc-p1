@@ -22,6 +22,14 @@ public class RestController {
 		return "Hello World!";
 		
 	}
+
+	@GetMapping(path = "/status")
+	@ResponseBody
+	@ResponseStatus(code = HttpStatus.OK)
+	public String status() {
+		return "The spring application is up and running";
+		
+	}
 	
 	@GetMapping(path = "/")
 	@ResponseBody
