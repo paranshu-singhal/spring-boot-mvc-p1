@@ -19,7 +19,7 @@ public class RestController {
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public String sayHello() {
-		return "Hello World!";
+		return "Hello World!!!";
 	}
 
 	@GetMapping(path = "/status")
