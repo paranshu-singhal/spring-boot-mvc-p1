@@ -20,7 +20,6 @@ public class RestController {
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public String sayHello() {
 		return "Hello World!";
-		
 	}
 
 	@GetMapping(path = "/status")
@@ -28,8 +27,6 @@ public class RestController {
 	@ResponseStatus(code = HttpStatus.OK)
 	public String status() {
 		return "The spring application is up and running";
-		
-		
 	}
 	
 	@GetMapping(path = "/")
