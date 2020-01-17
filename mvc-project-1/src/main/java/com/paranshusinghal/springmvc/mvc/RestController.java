@@ -29,7 +29,6 @@ public class RestController {
 		return "Hallelujah!!";	
 
 	}
-	
 	@PostMapping(path ="/login")
 	@ResponseStatus(code = HttpStatus.CREATED)
 	public String handleUserLogin(ModelMap model, @RequestParam(required = false) String name, @RequestParam(required = false) String password) {
