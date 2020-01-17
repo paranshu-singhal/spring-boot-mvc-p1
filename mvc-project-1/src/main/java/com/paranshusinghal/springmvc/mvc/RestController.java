@@ -34,6 +34,7 @@ public class RestController {
 	@ResponseStatus(code = HttpStatus.OK)
 	public String sayCheese() {
 		return "Hallelujah!!";	
+		
 	}
 	
 	@PostMapping(path ="/login")
