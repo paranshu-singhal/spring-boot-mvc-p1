@@ -29,6 +29,7 @@ public class RestController {
 	public String status() {
 		return "The spring application is up and running";
 		
+		
 	}
 	
 	@GetMapping(path = "/")
