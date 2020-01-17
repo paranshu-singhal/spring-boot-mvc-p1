@@ -15,13 +15,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class RestController {
 
-    @GetMapping(path = "/login")
-	@ResponseBody
-	@ResponseStatus(code = HttpStatus.CREATED)
-	public String sayHello() {
-		return "Hello World!!!";
-	}
-
 	@GetMapping(path = "/status")
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.OK)
@@ -34,7 +27,7 @@ public class RestController {
 	@ResponseStatus(code = HttpStatus.OK)
 	public String sayCheese() {
 		return "Hallelujah!!";	
-		
+
 	}
 	
 	@PostMapping(path ="/login")
