@@ -33,7 +33,7 @@ public class RestController {
 	@ResponseBody
 	@ResponseStatus(code = HttpStatus.OK)
 	public String sayCheese() {
-		return "Spring application deployed success!";	
+		return "Hallelujah!";	
 	}
 	
 	@PostMapping(path ="/login")
